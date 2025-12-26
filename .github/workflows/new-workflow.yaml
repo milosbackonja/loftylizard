@@ -19,6 +19,8 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
       - run: npm install
+      - run: ls -latrh
+      - run: pwd
 #      - run: npm test
       - run: npm run lint
       - name: Build and push
